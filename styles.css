@@ -447,8 +447,26 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -.045e
   .toc-state { grid-column: 2; text-align: left; }
   .floating-back-dock { right: .75rem; bottom: .75rem; padding: .35rem .5rem; gap: .25rem; }
   .floating-btn { padding: .25rem .55rem; font-size: .67rem; }
-  .strip-back-btn { padding: .18rem .45rem; font-size: .6rem; }
 }
+
+/* Author Personal Branding & Custom Voice Styles */
+.author-welcome { width: min(100% - 3rem, 1280px); margin: 1.5rem auto 3.5rem; }
+.author-welcome-box { background: var(--paper-warm, #fdfbf7); border: 1px solid var(--line); border-left: 5px solid var(--teal); padding: clamp(1.5rem, 3.5vw, 2.5rem); border-radius: 4px; box-shadow: 0 8px 24px rgba(0,0,0,0.03); }
+.author-tag { display: inline-block; font-size: 0.72rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--teal-dark); background: rgba(40, 109, 102, 0.1); padding: 0.25rem 0.65rem; border-radius: 3px; margin-bottom: 0.8rem; }
+.author-welcome-box h2 { font-family: var(--serif); font-size: clamp(1.5rem, 2.8vw, 2.2rem); margin: 0 0 1rem; color: var(--ink); }
+.author-welcome-box p { color: var(--ink-soft); font-size: 1rem; line-height: 1.7; max-width: 75ch; margin-bottom: 1rem; }
+.author-signature { margin-top: 1.4rem; padding-top: 0.9rem; border-top: 1px dashed var(--line); font-family: var(--serif); font-size: 1.05rem; color: var(--ink); }
+.author-signature strong { color: var(--teal-dark); }
+
+/* Huzaifa's Author Insights & Practical Tips Callouts */
+.author-insight { display: flex; align-items: flex-start; gap: 1.2rem; margin: 2.2rem 0; padding: 1.25rem 1.6rem; background: #f7f9f6; border: 1px solid #d9e4d5; border-left: 4px solid var(--coral); border-radius: 4px; }
+.author-insight-icon { font-size: 1.6rem; line-height: 1; flex-shrink: 0; padding-top: 0.15rem; }
+.author-insight-body h4 { margin: 0 0 0.35rem; font-family: var(--sans); font-size: 0.85rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: var(--coral); }
+.author-insight-body p { margin: 0; font-size: 0.93rem; line-height: 1.62; color: var(--ink); }
+
+body.theme-dark .author-welcome-box, body.theme-dark .author-insight { background: #192724; border-color: #2b4540; }
+body.theme-dark .author-insight-body p, body.theme-dark .author-welcome-box p { color: #c9ded9; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
