@@ -1,3 +1,9 @@
 {
-  "cleanUrls": false
+  "cleanUrls": false,
+  "rewrites": [
+    {
+      "source": "/sitemap",
+      "destination": "/sitemap.xml"
+    }
+  ]
 }
